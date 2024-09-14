@@ -4,6 +4,7 @@ import React from 'react';
 import * as eva from '@eva-design/eva';
 import {ApplicationProvider} from '@ui-kitten/components';
 import RootNavigator from './src/rooter/RootNavigator';
+import 'react-native-gesture-handler';
 
 export default function App() {
   return (

@@ -1,10 +1,8 @@
-//import liraries
-import React, {Component} from 'react';
+import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import Colors from '../../theme/colors';
 import {ArrowRight2, People} from 'iconsax-react-native';
 
-// create a component
 const GroupItem = ({item}) => {
   return (
     <View style={styles.container}>
@@ -23,7 +21,7 @@ const GroupItem = ({item}) => {
           marginLeft: 10,
           borderBottomWidth: 0.5,
         }}>
-        <Text>{item}</Text>
+        <Text>{item.title}</Text>
       </View>
       <View
         style={{
@@ -38,7 +36,6 @@ const GroupItem = ({item}) => {
   );
 };
 
-// define your styles
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -51,5 +48,4 @@ const styles = StyleSheet.create({
   },
 });
 
-//make this component available to the app
 export default GroupItem;
