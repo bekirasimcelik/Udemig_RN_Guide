@@ -3,7 +3,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import Colors from '../../theme/colors';
 import {ArrowRight2, People} from 'iconsax-react-native';
 
-const GroupItem = ({item}) => {
+const GroupItem = ({item, showDelete, deleteItem}) => {
   return (
     <View style={styles.container}>
       <View
@@ -29,7 +29,7 @@ const GroupItem = ({item}) => {
           flexDirection: 'row',
           alignItems: 'center',
         }}>
-        <Text style={{fontSize: 16, color: Colors.GRAY}}>3</Text>
+        <Text style={{fontSize: 16, color: Colors.GRAY}}>{item.id}</Text>
         <ArrowRight2 size="24" color={Colors.GRAY} />
       </View>
     </View>
