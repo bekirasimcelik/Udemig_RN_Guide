@@ -2,6 +2,11 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import Colors from '../../theme/colors';
 import {ArrowRight2, People} from 'iconsax-react-native';
+import {openDatabase} from 'react-native-sqlite-storage';
+
+const db = openDatabase({
+  name: 'myDataBase',
+});
 
 const GroupItem = ({item, showDelete, deleteItem}) => {
   return (
